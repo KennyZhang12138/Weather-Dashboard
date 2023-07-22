@@ -1,0 +1,81 @@
+* {
+  font-size: 100%;
+}
+
+.search-header {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navbar {
+  margin: 10px;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.container-fluid {
+  margin: 10px;
+}
+
+
+.card {
+  width: 100%;
+  padding: 1%;
+  background-color: rgb(226, 225, 230);
+  color: black;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  min-width: none;
+  max-width: 100%;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.mainCard {
+  max-width: 90%;
+  margin-top: 3%;
+  margin-left: 3%;
+  background-color: aliceblue;
+}
+
+#fiveDayCards {
+  width: 98%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+#fiveDayCards h3 {
+  width: 100%;
+}
+
+#fiveDayCards .card {
+  width: 16%;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgb(65, 65, 71);
+  color: white;
+  border-radius: 5px;
+}
+
+.weatherIcon {
+  line-height: 25%;
+  max-width: fit-content;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #fiveDayCards {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #fiveDayCards .card {
+    width: 98%;
+  }
+}

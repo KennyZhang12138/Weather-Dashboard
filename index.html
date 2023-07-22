@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather-Dashboard</title>
+  </head>
+
+  <body>
+    <nav class="navbar bg-primary bg-opacity-50">
+      <span class="navbar-brand mb-0 h1 w-100 text-center"
+        >Weather Dashboard</span
+      >
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <p class="search-header my-1" id="search-input">Search for a city</p>
+          <!-- search input-->
+          <div class="col-10">
+            <div class="row mb-3">
+              <input
+                id="city-input"
+                type="text"
+                class="form-control"
+                placeholder="Enter city name"
+                aria-label="Enter city name"
+              />
+            </div>
+            <div class="row">
+              <button class="btn btn-primary" type="button" id="search-button">
+                Search<i class="fas fa-search"></i>
+              </button>
+            </div>
+
+            <hr />
+            <!-- search history here-->
+            <div id="searchHistorySection">
+              <ul id="searchHistory"></ul>
+            </div>
+          </div>
+        </div>
+
+        <!--weather detial here-->
+        <div class="col-8">
+          <!-- today's weather-->
+          <section class="mainCard">
+            <div class="card bg-white">
+              <h3 id="todaysDate">
+                <span id="CityName"></span> <span class="date"></span>
+              </h3>
+              <img class="weatherIcon" />
+              <p>Temp: <span class="temp"></span></p>
+              <p>Wind: <span class="wind"></span></p>
+              <p>Humidity: <span class="humidity"></span></p>
+            </div>
+          </section>
+
+          <!-- future 5 days weather-->
+          <section id="fiveDayCards">
+            <h3>5-Day Forecast:</h3>
+            <section class="card">
+              <h3 class="date"></h3>
+              <img class="weatherIcon" />
+              <p>Temp: <span class="temp"></span></p>
+              <p>Wind: <span class="wind"></span></p>
+              <p>Humidity: <span class="humidity"></span></p>
+            </section>
+            <section class="card">
+              <h3><span class="date"></span></h3>
+              <img class="weatherIcon" />
+              <p>Temp: <span class="temp"></span></p>
+              <p>Wind: <span class="wind"></span></p>
+              <p>Humidity: <span class="humidity"></span></p>
+            </section>
+            <section class="card">
+              <h3><span class="date"></span></h3>
+              <img class="weatherIcon" />
+              <p>Temp: <span class="temp"></span></p>
+              <p>Wind: <span class="wind"></span></p>
+              <p>Humidity: <span class="humidity"></span></p>
+            </section>
+            <section class="card">
+              <h3><span class="date"></span></h3>
+              <img class="weatherIcon" />
+              <p>Temp: <span class="temp"></span></p>
+              <p>Wind: <span class="wind"></span></p>
+              <p>Humidity: <span class="humidity"></span></p>
+            </section>
+            <section class="card">
+              <h3><span class="date"></span></h3>
+              <img class="weatherIcon" />
+              <p>Temp: <span class="temp"></span></p>
+              <p>Wind: <span class="wind"></span></p>
+              <p>Humidity: <span class="humidity"></span></p>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
